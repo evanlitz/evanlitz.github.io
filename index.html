@@ -4,30 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Evan Litzer</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <meta name="description" content="Evan Litzer — CS graduate from Iowa State University building software and AI systems. Projects spanning robotics, machine learning, and full-stack development." />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Evan Litzer — Software Engineering & AI" />
   <meta property="og:description" content="CS graduate from Iowa State University building software and AI systems. Projects spanning robotics, machine learning, and full-stack development." />
   <meta property="og:url" content="https://evanlitz.github.io" />
-  <meta property="og:image" content="https://evanlitz.github.io/portpic.jpeg" />
+  <meta property="og:image" content="https://evanlitz.github.io/images/portpic.jpeg" />
   <meta property="og:site_name" content="Evan Litzer" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Evan Litzer — Software Engineering & AI" />
   <meta name="twitter:description" content="CS graduate from Iowa State University building software and AI systems." />
-  <meta name="twitter:image" content="https://evanlitz.github.io/portpic.jpeg" />
+  <meta name="twitter:image" content="https://evanlitz.github.io/images/portpic.jpeg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
     <div class="container header-inner">
-      <span class="logo">Evan Litzer</span>
+      <div class="header-identity">
+        <span class="logo">Evan Litzer</span>
+        <span class="header-divider"></span>
+        <a href="mailto:evan@litzer.com" class="header-contact">evan@litzer.com</a>
+        <span class="header-divider"></span>
+        <a href="tel:+16305499303" class="header-contact">(630) 549-9303</a>
+      </div>
       <nav>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -42,104 +49,129 @@
       <div class="container hero-inner">
         <div class="hero-content">
           <h1>Evan Litzer</h1>
-          <p class="subtitle">CS Graduate &mdash; Software Engineering &amp; AI</p>
+          <p class="subtitle">CS Graduate &mdash; Software Engineering &amp; IT</p>
           <p class="bio">
-            CS graduate from Iowa State University. I build backend systems and AI tooling &mdash;
-            prediction models, multi-agent pipelines, and tools that solve real problems.
-            Currently looking for SWE roles where systems design and applied AI intersect.
+            I grew up solving hard problems for fun, whether it be trivia nights, logic puzzles, or anything with a curious solution worth finding. Programming was the next natural step for me, and brought this passion into my career.
+            That same pull toward mastering something difficult follows me outside of coding too, whether it's trying to be the next Travis Barker on the drums or Arnold Schwarzenegger at the gym. That same hunt for the next hard problem is what's got me looking for my next opportunity to 
+            put that itch to solving something real. This is my portfolio page where I log my project work. Reach out if you want to talk more!
           </p>
           <div class="hero-links">
-            <a href="https://github.com/evanlitz" target="_blank" rel="noopener" class="btn">GitHub</a>
-            <a href="https://www.linkedin.com/in/evanlitzer" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
-            <a href="evanlitz_resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">Resume</a>
+            <a href="evanlitz_resume.pdf" target="_blank" rel="noopener" class="btn">Resume</a>
+            <a href="https://github.com/evanlitz" target="_blank" rel="noopener" class="text-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/evanlitzer" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
           </div>
         </div>
-        <div class="hero-photo">
-          <img src="portpic.jpeg" alt="Evan Litzer at Iowa State University" />
-        </div>
+        <figure class="hero-photo">
+          <img src="images/portpic.jpeg" alt="Evan Litzer at Iowa State University" />
+          <figcaption>Open to any location.</figcaption>
+        </figure>
       </div>
     </section>
 
     <section id="projects">
       <div class="container">
-        <h2>Projects</h2>
+        <div class="section-head">
+          <span class="eyebrow">Selected Work</span>
+          <h2>Projects</h2>
+        </div>
         <div class="project-grid">
 
           <article class="card">
-            <div class="card-top">
-              <h3>Autonomous Chess Robot</h3>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Robotics</span>
-                <span class="tag">Senior Design</span>
+            <img src="images/chess.png" alt="Autonomous Chess Robot — UR10e arm over a physical chess board" class="card-thumb" style="object-position: center 35%;" />
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Autonomous Chess Robot</h3>
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">ROS</span>
+                  <span class="tag">Team Development</span>
+                </div>
+              </div>
+              <p>Senior capstone integrating a UR10e robotic arm with a full perception-to-motion pipeline: a PyTorch model classifies all 64 squares from a calibrated camera feed, Stockfish drives game logic, and MuJoCo simulates the pick-and-place execution.</p>
+              <div class="card-links">
+                <a href="https://github.com/evanlitz/Autonomous-Chess-Robot" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
+                <a href="https://seniord.cs.iastate.edu/2026-March-9/" target="_blank" rel="noopener" class="card-link">Visit Website &rarr;</a>
               </div>
             </div>
-            <p>Senior capstone integrating a UR10e robotic arm with a full perception-to-motion pipeline: a PyTorch model classifies all 64 squares from a calibrated camera feed, Stockfish drives game logic, and MuJoCo simulates the pick-and-place execution.</p>
-            <a href="https://github.com/evanlitz/Autonomous-Chess-Robot" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
           <article class="card">
-            <div class="card-top">
-              <h3>Bracket Model</h3>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">ML</span>
+            <img src="images/bracket.png" alt="Bracket Model — NCAA tournament simulator dashboard" class="card-thumb" />
+            <div class="card-body">
+              <div class="card-top">
+                <h3>Bracket Model</h3>
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">FastAPI</span>
+                  <span class="tag">ML</span>
+                </div>
               </div>
+              <p>Gradient-boosted model trained on 23 seasons of NCAA tournament data, hitting 71.4% accuracy via leave-year-out cross-validation — beating KenPom's efficiency rating alone (65%) and seed-based picks (58%). Built with a FastAPI backend serving a HistGradientBoostingClassifier over precomputed feature differentials, with a Vite + vanilla JS frontend for bracket simulations and team similarity search.</p>
+              <a href="https://github.com/evanlitz/Bracket_Model" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
             </div>
-            <p>Gradient-boosted model trained on 23 seasons of NCAA tournament data, hitting 71.4% accuracy via leave-year-out cross-validation — beating KenPom's efficiency rating alone (65%) and seed-based picks (58%). The hard part was eliminating data leakage: every feature is restricted to information available before Selection Sunday.</p>
-            <a href="https://github.com/evanlitz/Bracket_Model" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
           <article class="card">
-            <div class="card-top">
-              <h3>S3 Secure File System</h3>
-              <div class="tags">
-                <span class="tag">JavaScript</span>
-                <span class="tag">AWS S3</span>
-                <span class="tag">Security</span>
+            <img src="images/s3.jpg" alt="S3 Secure File System — architecture diagram" class="card-thumb" />
+            <div class="card-body">
+              <div class="card-top">
+                <h3>S3 Secure File System</h3>
+                <div class="tags">
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">AWS S3</span>
+                  <span class="tag">Security</span>
+                </div>
               </div>
+              <p>Built for Iowa State's cloud security course (CS459): a secure file storage system on AWS S3 with access-controlled uploads, designed to close the gap between convenient cloud storage and least-privilege security.</p>
+              <a href="https://github.com/evanlitz/S3-Secure-File-System" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
             </div>
-            <p>Built for Iowa State's cloud security course (CS459): a secure file storage system on AWS S3 with access-controlled uploads, designed to close the gap between convenient cloud storage and least-privilege security.</p>
-            <a href="https://github.com/evanlitz/S3-Secure-File-System" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
           <article class="card">
-            <div class="card-top">
-              <h3>ISU Coursework</h3>
-              <div class="tags">
-                <span class="tag">HTML</span>
-                <span class="tag">Coursework</span>
+            <img src="images/isu.jpg" alt="Iowa State University Cyclones logo" class="card-thumb" />
+            <div class="card-body">
+              <div class="card-top">
+                <h3>ISU Coursework</h3>
+                <div class="tags">
+                  <span class="tag">Computer Science</span>
+                  <span class="tag">Coursework</span>
+                </div>
               </div>
+              <p>Assignments spanning 19 CS and statistics courses at Iowa State — from data structures and operating systems through machine learning and senior design — completed with a 3.52 GPA, Cum Laude.</p>
+              <a href="https://github.com/evanlitz/ISU-Coursework" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
             </div>
-            <p>Assignments spanning 19 CS and statistics courses at Iowa State — from data structures and operating systems through machine learning and senior design — completed with a 3.52 GPA, Cum Laude.</p>
-            <a href="https://github.com/evanlitz/ISU-Coursework" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
           <article class="card">
-            <div class="card-top">
-              <h3>AI Daily Update</h3>
-              <div class="tags">
-                <span class="tag">TypeScript</span>
-                <span class="tag">Next.js</span>
-                <span class="tag">Claude API</span>
+            <img src="images/daily-update.png" alt="AI Daily Update — news aggregation dashboard" class="card-thumb" />
+            <div class="card-body">
+              <div class="card-top">
+                <h3>AI Daily Update</h3>
+                <div class="tags">
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Next.js</span>
+                  <span class="tag">Turso</span>
+                </div>
               </div>
+              <p>Aggregates AI news from 15 sources (arXiv, GitHub, HuggingFace, Hacker News, and more), using Claude to screen relevance and generate a daily brief. Built with Next.js and TypeScript on Vercel, with ingestion and Claude-powered enrichment split into separate cron jobs backed by Turso/libSQL.</p>
+              <a href="https://github.com/evanlitz/AI-Daily-Update" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
             </div>
-            <p>Aggregates AI news from 15 sources (arXiv, GitHub, HuggingFace, Hacker News, and more), using Claude to screen relevance and generate a daily brief. The interesting problem was splitting ingestion from LLM analysis across two cron jobs to work around Vercel's 10-second function timeout.</p>
-            <a href="https://github.com/evanlitz/AI-Daily-Update" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
           <article class="card">
-            <div class="card-top">
-              <h3>EbayAI</h3>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Ollama</span>
-                <span class="tag">Local AI</span>
+            <img src="images/ebay.png" alt="EbayAI — deal finder desktop app" class="card-thumb" />
+            <div class="card-body">
+              <div class="card-top">
+                <h3>EbayAI</h3>
+                <div class="tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">Ollama</span>
+                  <span class="tag">Local AI</span>
+                </div>
               </div>
+              <p>A seven-stage pipeline that parses natural language queries, runs parallel eBay searches, and scores listings against historical median pricing. It runs on a local Qwen 2.5 7B model via Ollama, so no listing data ever leaves the machine. Saved watches can also notify users of new matching listings through an optional Slack integration.</p>
+              <a href="https://github.com/evanlitz/EbayAI" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
             </div>
-            <p>A seven-stage pipeline that parses natural language queries, runs parallel eBay searches, and scores listings against historical median pricing — all powered by a local Qwen 2.5 7B model via Ollama, so no listing data ever leaves the machine.</p>
-            <a href="https://github.com/evanlitz/EbayAI" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
         </div>
@@ -148,35 +180,63 @@
 
     <section id="skills" class="section-alt">
       <div class="container">
-        <h2>Skills</h2>
+        <div class="section-head">
+          <span class="eyebrow">Toolkit</span>
+          <h2>Skills</h2>
+        </div>
         <div class="skills-grid">
           <div class="skill-group">
             <h4>Languages</h4>
-            <ul>
-              <li>Python</li>
-              <li>TypeScript / JavaScript</li>
-              <li>Java</li>
-              <li>SQL</li>
-              <li>HTML / CSS</li>
-            </ul>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C/C++</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">OCaml</span>
+              <span class="skill-tag">R</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+            </div>
           </div>
           <div class="skill-group">
-            <h4>AI &amp; ML</h4>
-            <ul>
-              <li>Machine Learning Pipelines</li>
-              <li>Multi-Agent Systems</li>
-              <li>Local LLMs (Ollama)</li>
-              <li>Sports Analytics / Prediction</li>
-            </ul>
+            <h4>Frameworks &amp; Libraries</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Pandas</span>
+            </div>
           </div>
           <div class="skill-group">
-            <h4>Tools &amp; Platforms</h4>
-            <ul>
-              <li>FastAPI</li>
-              <li>AWS S3</li>
-              <li>Git / GitHub</li>
-              <li>REST APIs</li>
-            </ul>
+            <h4>Tools</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Git / GitHub / GitLab</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Jupyter</span>
+              <span class="skill-tag">Claude</span>
+              <span class="skill-tag">AI Agents</span>
+              <span class="skill-tag">LLMs</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>AI / ML</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Computer Vision</span>
+              <span class="skill-tag">Gradient Boosting</span>
+              <span class="skill-tag">Feature Engineering</span>
+              <span class="skill-tag">Model Evaluation</span>
+              <span class="skill-tag">Cross Validation</span>
+              <span class="skill-tag">LLM-Assisted Development</span>
+              <span class="skill-tag">Local LLMs / Ollama</span>
+            </div>
           </div>
         </div>
       </div>
@@ -184,12 +244,20 @@
 
     <section id="contact">
       <div class="container contact-inner">
-        <h2>Get in Touch</h2>
-        <p>Open to SWE roles and interesting projects. Best way to reach me is LinkedIn or GitHub.</p>
+        <div class="section-head">
+          <span class="eyebrow">Contact Me</span>
+          <h2>Get in Touch</h2>
+        </div>
+        <p>Open to SWE / IT roles and interesting projects.</p>
+        <p class="contact-detail-line">
+          <a href="mailto:evan@litzer.com" class="contact-detail">evan@litzer.com</a>
+          <span class="contact-sep">&middot;</span>
+          <a href="tel:+16305499303" class="contact-detail">(630) 549-9303</a>
+        </p>
         <div class="contact-links">
-          <a href="https://github.com/evanlitz" target="_blank" rel="noopener" class="btn">GitHub</a>
-          <a href="https://www.linkedin.com/in/evanlitzer" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
-          <a href="mailto:bubaq@iastate.edu" class="btn btn-outline">Email</a>
+          <a href="mailto:evan@litzer.com" class="btn">Email Me</a>
+          <a href="https://www.linkedin.com/in/evanlitzer" target="_blank" rel="noopener" class="text-link">LinkedIn</a>
+          <a href="https://github.com/evanlitz" target="_blank" rel="noopener" class="text-link">GitHub</a>
         </div>
       </div>
     </section>
@@ -202,5 +270,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

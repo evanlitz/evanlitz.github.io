@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Evan Litzer</title>
+  <meta name="description" content="Evan Litzer — CS graduate from Iowa State University building software and AI systems. Projects spanning robotics, machine learning, and full-stack development." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Evan Litzer — Software Engineering & AI" />
+  <meta property="og:description" content="CS graduate from Iowa State University building software and AI systems. Projects spanning robotics, machine learning, and full-stack development." />
+  <meta property="og:url" content="https://evanlitz.github.io" />
+  <meta property="og:image" content="https://evanlitz.github.io/portpic.jpeg" />
+  <meta property="og:site_name" content="Evan Litzer" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Evan Litzer — Software Engineering & AI" />
+  <meta name="twitter:description" content="CS graduate from Iowa State University building software and AI systems." />
+  <meta name="twitter:image" content="https://evanlitz.github.io/portpic.jpeg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -25,16 +39,23 @@
   <main>
 
     <section class="hero">
-      <div class="container">
-        <h1>Evan Litzer</h1>
-        <p class="subtitle">CS Graduate &mdash; Software Engineering &amp; AI</p>
-        <p class="bio">
-          I build software across the full stack with a growing focus on AI systems and machine learning pipelines.
-          Recent work spans NCAA prediction models, multi-agent research tools, and local AI integrations.
-        </p>
-        <div class="hero-links">
-          <a href="https://github.com/evanlitz" target="_blank" rel="noopener" class="btn">GitHub</a>
-          <a href="https://www.linkedin.com/in/evanlitzer" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Evan Litzer</h1>
+          <p class="subtitle">CS Graduate &mdash; Software Engineering &amp; AI</p>
+          <p class="bio">
+            CS graduate from Iowa State University. I build backend systems and AI tooling &mdash;
+            prediction models, multi-agent pipelines, and tools that solve real problems.
+            Currently looking for SWE roles where systems design and applied AI intersect.
+          </p>
+          <div class="hero-links">
+            <a href="https://github.com/evanlitz" target="_blank" rel="noopener" class="btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/evanlitzer" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+            <a href="evanlitz_resume.pdf" target="_blank" rel="noopener" class="btn btn-outline">Resume</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="portpic.jpeg" alt="Evan Litzer at Iowa State University" />
         </div>
       </div>
     </section>
@@ -46,6 +67,19 @@
 
           <article class="card">
             <div class="card-top">
+              <h3>Autonomous Chess Robot</h3>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Robotics</span>
+                <span class="tag">Senior Design</span>
+              </div>
+            </div>
+            <p>Senior capstone integrating a UR10e robotic arm with a full perception-to-motion pipeline: a PyTorch model classifies all 64 squares from a calibrated camera feed, Stockfish drives game logic, and MuJoCo simulates the pick-and-place execution.</p>
+            <a href="https://github.com/evanlitz/Autonomous-Chess-Robot" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
               <h3>Bracket Model</h3>
               <div class="tags">
                 <span class="tag">Python</span>
@@ -53,45 +87,8 @@
                 <span class="tag">ML</span>
               </div>
             </div>
-            <p>Machine learning pipeline and web app for predicting NCAA tournament matchups using 23 seasons of pre-tournament team data.</p>
+            <p>Gradient-boosted model trained on 23 seasons of NCAA tournament data, hitting 71.4% accuracy via leave-year-out cross-validation — beating KenPom's efficiency rating alone (65%) and seed-based picks (58%). The hard part was eliminating data leakage: every feature is restricted to information available before Selection Sunday.</p>
             <a href="https://github.com/evanlitz/Bracket_Model" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>Research Agent</h3>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Multi-Agent</span>
-              </div>
-            </div>
-            <p>Intelligent multi-agent research system that conducts comprehensive web research on any topic, coordinating multiple specialized agents.</p>
-            <a href="https://github.com/evanlitz/ResearchAgent" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>EbayAI</h3>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Ollama</span>
-                <span class="tag">Local AI</span>
-              </div>
-            </div>
-            <p>Local AI-powered eBay deal finder that runs entirely on Ollama — no external API calls, fully private deal analysis.</p>
-            <a href="https://github.com/evanlitz/EbayAI" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <h3>AI Daily Update</h3>
-              <div class="tags">
-                <span class="tag">TypeScript</span>
-                <span class="tag">AI</span>
-              </div>
-            </div>
-            <p>Compiles crucial and current information on the AI industry and key topics into a daily digest.</p>
-            <a href="https://github.com/evanlitz/AI-Daily-Update" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
           <article class="card">
@@ -103,20 +100,46 @@
                 <span class="tag">Security</span>
               </div>
             </div>
-            <p>Secure cloud file system built on AWS S3 for a security-focused systems course. Implements access control and encryption at the application layer.</p>
+            <p>Built for Iowa State's cloud security course (CS459): a secure file storage system on AWS S3 with access-controlled uploads, designed to close the gap between convenient cloud storage and least-privilege security.</p>
             <a href="https://github.com/evanlitz/S3-Secure-File-System" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
           <article class="card">
             <div class="card-top">
-              <h3>Letterboxd Stats</h3>
+              <h3>ISU Coursework</h3>
               <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Algorithms</span>
+                <span class="tag">HTML</span>
+                <span class="tag">Coursework</span>
               </div>
             </div>
-            <p>Adds movie similarity algorithms to Letterboxd to surface personalized recommendations based on a user's watch history.</p>
-            <a href="https://github.com/evanlitz/LetterBoxd-Account-Stats" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
+            <p>Assignments spanning 19 CS and statistics courses at Iowa State — from data structures and operating systems through machine learning and senior design — completed with a 3.52 GPA, Cum Laude.</p>
+            <a href="https://github.com/evanlitz/ISU-Coursework" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>AI Daily Update</h3>
+              <div class="tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Claude API</span>
+              </div>
+            </div>
+            <p>Aggregates AI news from 15 sources (arXiv, GitHub, HuggingFace, Hacker News, and more), using Claude to screen relevance and generate a daily brief. The interesting problem was splitting ingestion from LLM analysis across two cron jobs to work around Vercel's 10-second function timeout.</p>
+            <a href="https://github.com/evanlitz/AI-Daily-Update" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <h3>EbayAI</h3>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">Local AI</span>
+              </div>
+            </div>
+            <p>A seven-stage pipeline that parses natural language queries, runs parallel eBay searches, and scores listings against historical median pricing — all powered by a local Qwen 2.5 7B model via Ollama, so no listing data ever leaves the machine.</p>
+            <a href="https://github.com/evanlitz/EbayAI" target="_blank" rel="noopener" class="card-link">View on GitHub &rarr;</a>
           </article>
 
         </div>
